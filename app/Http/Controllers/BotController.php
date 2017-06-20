@@ -42,12 +42,14 @@ class BotController extends Controller
     public function hello()
     {
         $res = array(
+            'nama' => "milzam", 
             'code' => 200,
-            'message' => "hello world from bot controller"
+            'message' => "hello world from bot controllerssssasldjql;akdfsjld;kfjksadjsdafjsdaflkjwlkjelqejq"
         );
 
         return response($res);
     }
+    
 
     public function callback(Request $request)
     {
@@ -86,6 +88,19 @@ class BotController extends Controller
         $res = array('code' => 200, 'message' => 'No Event');
         return response($res);
 
+    }
+
+
+    public function milzam()
+    {
+        $res = array(
+            'nama' => "milzam", 
+            'code' => 200,
+            'message' => "urusaieyoooo masakenaaah",
+            'ttl' => "2012-12-12"
+        );
+
+        return response($res);
     }
 
 }
