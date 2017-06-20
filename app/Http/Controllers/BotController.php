@@ -72,7 +72,8 @@ class BotController extends Controller
         foreach ($data['events'] as $event){
             if ($event['type'] == 'message'){
                 if($event['message']['type'] == 'text'){
-                    $message = "Hai... ";
+                    //$message = "Hai... ";
+                    $message = "Hallo... ";
                     $push = $this->bot->replyText($event['replyToken'], $message);
                     $res = array(
                         'code' => $push->getHTTPStatus(),
